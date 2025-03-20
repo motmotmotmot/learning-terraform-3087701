@@ -38,6 +38,6 @@ module "blog_sg" {
   ingress_rules       = ["http-80-tcp","http-443-tcp"]
   ingress_cidr_blocks = ["73.62.218.0/24"]
 
-  egress_rules  = ["all-all"]
-  cidr_blocks   = ["0.0.0.0/0"]
+  egress_rules         = ["all-all"]
+  egress_cidr_blocks   = ["0.0.0.0/0"]
 }
